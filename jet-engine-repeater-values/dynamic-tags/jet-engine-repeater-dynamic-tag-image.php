@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * Elementor dynamic tag that returns a server variable.
  *
- * @since 1.0.0
+ * @since 1.1.0
  */
 Class Elementor_Dynamic_Tag_Jet_Engine_Repeater_Image extends \Elementor\Core\DynamicTags\Data_Tag {
 
@@ -17,7 +17,7 @@ Class Elementor_Dynamic_Tag_Jet_Engine_Repeater_Image extends \Elementor\Core\Dy
 	 *
 	 * Retrieve the name of the tag.
 	 *
-	 * @since 1.0.0
+	 * @since 1.1.0
 	 * @access public
 	 * @return string Dynamic tag name.
 	 */
@@ -30,7 +30,7 @@ Class Elementor_Dynamic_Tag_Jet_Engine_Repeater_Image extends \Elementor\Core\Dy
 	 *
 	 * Returns the title of the tag.
 	 *
-	 * @since 1.0.0
+	 * @since 1.1.0
 	 * @access public
 	 * @return string Dynamic tag title.
 	 */
@@ -43,7 +43,7 @@ Class Elementor_Dynamic_Tag_Jet_Engine_Repeater_Image extends \Elementor\Core\Dy
 	 *
 	 * Retrieve the list of groups the tag belongs to.
 	 *
-	 * @since 1.0.0
+	 * @since 1.1.0
 	 * @access public
 	 * @return array Dynamic tag groups.
 	 */
@@ -56,7 +56,7 @@ Class Elementor_Dynamic_Tag_Jet_Engine_Repeater_Image extends \Elementor\Core\Dy
 	 *
 	 * Retrieve the list of categories the tag belongs to.
 	 *
-	 * @since 1.0.0
+	 * @since 1.1.0
 	 * @access public
 	 * @return array Dynamic tag categories.
 	 */
@@ -72,7 +72,7 @@ Class Elementor_Dynamic_Tag_Jet_Engine_Repeater_Image extends \Elementor\Core\Dy
 	 *
 	 * Add input fields to allow the user to customize the tag settings.
 	 *
-	 * @since 1.0.0
+	 * @since 1.1.0
 	 * @access protected
 	 * @return void
 	 */
@@ -89,7 +89,7 @@ Class Elementor_Dynamic_Tag_Jet_Engine_Repeater_Image extends \Elementor\Core\Dy
 	/**
 	 * Return the value
 	 *
-	 * @since 1.0.0
+	 * @since 1.1.0
 	 * @access public
 	 * @return void
 	 */
