@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @since 1.0.0
  */
-Class Elementor_Dynamic_Tag_Jet_Engine_Repeater extends \Elementor\Core\DynamicTags\Tag {
+Class Elementor_Dynamic_Tag_Jet_Engine_Repeater_Text extends \Elementor\Core\DynamicTags\Tag {
 
 	/**
 	 * Get dynamic tag name.
@@ -22,7 +22,7 @@ Class Elementor_Dynamic_Tag_Jet_Engine_Repeater extends \Elementor\Core\DynamicT
 	 * @return string Dynamic tag name.
 	 */
 	public function get_name() {
-		return 'runthings-jetengine-repeater-value';
+		return 'runthings-jetengine-repeater-value-text';
 	}
 
 	/**
@@ -61,7 +61,13 @@ Class Elementor_Dynamic_Tag_Jet_Engine_Repeater extends \Elementor\Core\DynamicT
 	 * @return array Dynamic tag categories.
 	 */
 	public function get_categories() {
-		return [ \Elementor\Modules\DynamicTags\Module::TEXT_CATEGORY ];
+		return [ 
+			\Elementor\Modules\DynamicTags\Module::TEXT_CATEGORY,
+			\Elementor\Modules\DynamicTags\Module::URL_CATEGORY,
+			// \Elementor\Modules\DynamicTags\Module::POST_META_CATEGORY,
+			\Elementor\Modules\DynamicTags\Module::NUMBER_CATEGORY,
+			\Elementor\Modules\DynamicTags\Module::COLOR_CATEGORY
+		];
 	}
 
 	/**
@@ -100,6 +106,11 @@ Class Elementor_Dynamic_Tag_Jet_Engine_Repeater extends \Elementor\Core\DynamicT
         if ( $field ) {
             $result = jet_engine()->listings->data->get_meta($field);
         }
+
+		// attempting to bind an invalid key such as a gallery
+		if ( ! is_string($result) ){
+			return;
+		}
 
 		echo wp_kses_post( $result );
 	}

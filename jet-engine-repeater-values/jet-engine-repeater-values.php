@@ -46,9 +46,13 @@ add_action( 'elementor/dynamic_tags/register_tags', 'register_dynamic_tag_group'
  */
 function register_dynamic_tag( $dynamic_tags ) {
 
-	require_once( __DIR__ . '/dynamic-tags/jet-engine-repeater-dynamic-tag.php' );
+	require_once( __DIR__ . '/dynamic-tags/jet-engine-repeater-dynamic-tag-text.php' );
+	require_once( __DIR__ . '/dynamic-tags/jet-engine-repeater-dynamic-tag-gallery.php' );
+	require_once( __DIR__ . '/dynamic-tags/jet-engine-repeater-dynamic-tag-image.php' );
 
-	$dynamic_tags->register_tag( 'Elementor_Dynamic_Tag_Jet_Engine_Repeater' );
+	$dynamic_tags->register_tag( 'Elementor_Dynamic_Tag_Jet_Engine_Repeater_Text' );
+	$dynamic_tags->register_tag( 'Elementor_Dynamic_Tag_Jet_Engine_Repeater_Gallery' );
+	$dynamic_tags->register_tag( 'Elementor_Dynamic_Tag_Jet_Engine_Repeater_Image' );
 
 }
 add_action( 'elementor/dynamic_tags/register_tags', 'register_dynamic_tag' );
