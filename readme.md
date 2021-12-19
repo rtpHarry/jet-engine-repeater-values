@@ -33,6 +33,10 @@ it, eg:
 The name is defined next to the label in the list of fields.
 
 # Changelog
+1.1.1 - 19th December 2021
+  - Bugfix - Tweak dynamic tag names so they don't clash when a field supports
+    all category types
+
 1.1.0 - 19th December 2021
   - Added licence
   - Added readme
