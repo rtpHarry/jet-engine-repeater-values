@@ -35,7 +35,7 @@ Class Elementor_Dynamic_Tag_Jet_Engine_Repeater_Gallery extends \Elementor\Core\
 	 * @return string Dynamic tag title.
 	 */
 	public function get_title() {
-		return esc_html__( 'JetEngine Repeater Field', 'jet-engine-repeater-values' );
+		return esc_html__( 'JetEngine Repeater Field (Gallery)', 'jet-engine-repeater-values' );
 	}
 
 	/**
