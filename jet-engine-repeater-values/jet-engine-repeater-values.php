@@ -9,8 +9,22 @@
  * Text Domain: jet-engine-repeater-values
  *
  * Elementor tested up to: 3.5.0
- * Elementor Pro tested up to: 3.5.0
- */
+/*
+"JetEngine - Repeater field values" is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+any later version.
+ 
+"JetEngine - Repeater field values" is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+ 
+You should have received a copy of the GNU General Public License
+along with "JetEngine - Repeater field values". 
+
+If not, see https://github.com/rtpHarry/jet-engine-repeater-values/blob/703dccf72f149cf9a062e73bebbdeadb7e9c85b9/jet-engine-repeater-values/license.md.
+*/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
