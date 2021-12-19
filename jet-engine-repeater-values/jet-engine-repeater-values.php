@@ -46,7 +46,7 @@ function register_dynamic_tag_group( $dynamic_tags ) {
 	\Elementor\Plugin::instance()->dynamic_tags->register_group(
 		'runthings',
 		[
-			'title' => esc_html__( 'RunThings.dev', 'jet-engine-repeater-values' )
+			'title' => esc_html__( 'runthings.dev', 'jet-engine-repeater-values' )
 		]
 	);
 
