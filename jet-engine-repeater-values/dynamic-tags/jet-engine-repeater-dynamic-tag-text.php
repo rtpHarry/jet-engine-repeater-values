@@ -64,7 +64,7 @@ Class Elementor_Dynamic_Tag_Jet_Engine_Repeater_Text extends \Elementor\Core\Dyn
 		return [ 
 			\Elementor\Modules\DynamicTags\Module::TEXT_CATEGORY,
 			\Elementor\Modules\DynamicTags\Module::URL_CATEGORY,
-			// \Elementor\Modules\DynamicTags\Module::POST_META_CATEGORY,
+			\Elementor\Modules\DynamicTags\Module::POST_META_CATEGORY,
 			\Elementor\Modules\DynamicTags\Module::NUMBER_CATEGORY,
 			\Elementor\Modules\DynamicTags\Module::COLOR_CATEGORY
 		];
