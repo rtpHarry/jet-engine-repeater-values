@@ -9,6 +9,9 @@
  * Text Domain: jet-engine-repeater-values
  *
  * Elementor tested up to: 3.5.0
+ * Elementor Pro tested up to: 3.5.2
+ */
+
 /*
 "JetEngine - Repeater field values" is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
