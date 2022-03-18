@@ -109,10 +109,37 @@ Class Elementor_Dynamic_Tag_Jet_Engine_Repeater_Text extends \Elementor\Core\Dyn
 
 		// attempting to bind an invalid key such as a gallery
 		if ( ! is_string($result) ){
-			return;
+			if( is_array($result) ) {
+				$result = $this->checkboxes_to_csv_string($result);
+			} else {
+                return;
+            }
 		}
 
 		echo wp_kses_post( $result );
+	}
+
+	/**
+	 * Convert Engine checkboxes values to plain csv string
+	 * 
+	 * @since 1.2.beta.1
+	 * @return string
+	 */
+	private function checkboxes_to_csv_string( $array = array() ) {
+
+		$result = array();
+
+		foreach ( $array as $value => $bool ) {
+
+			$bool = filter_var( $bool, FILTER_VALIDATE_BOOLEAN );
+
+			if ( $bool ) {
+				$result[] = $value;
+			}
+		}
+
+		return implode(",", $result);
+
 	}
 
 }
