@@ -3,7 +3,7 @@
  * Plugin Name: JetEngine - Repeater field values
  * Description: Add dynamic tag that returns a repeater variable.
  * Plugin URI:  https://runthings.dev/
- * Version:     1.1.1
+ * Version:     1.2.beta.1
  * Author:      Matthew Harris, runthings.dev
  * Author URI:  https://runthings.dev/
  * Text Domain: jet-engine-repeater-values

@@ -33,6 +33,10 @@ it, eg:
 The name is defined next to the label in the list of fields.
 
 # Changelog
+1.2.beta.1 - 18th March 2022
+  - Initial support for JetEngine checkbox meta fields, as discussed here:
+    https://github.com/rtpHarry/jet-engine-repeater-values/issues/2
+
 1.1.1 - 19th December 2021
   - Bugfix - Tweak dynamic tag names so they don't clash when a field supports
     all category types
@@ -57,6 +61,6 @@ This plugin is licenced under GPL 3, and is free to use on personal and
 commercial projects.
 
 # Author
-Built by Matthew Harris of runthings.dev, copyright 2021.
+Built by Matthew Harris of runthings.dev, copyright 2021-2022.
 
 https://runthings.dev/
